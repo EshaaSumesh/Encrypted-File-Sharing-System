@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, send_from_directory
 from app.appfile_handler import secure_store, secure_retrieve
-from crypto.cryptorsa_utils import generate_keys
+from crypto.rsa_utils import generate_keys
 import os
 
 app = Flask(__name__)
