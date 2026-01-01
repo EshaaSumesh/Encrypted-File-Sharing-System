@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, send_from_directory
-from file_handler import secure_store, secure_retrieve
+from app.file_handler import secure_store, secure_retrieve
 from crypto.rsa_utils import generate_keys
 import os
+
 
 app = Flask(__name__)
 private_key, public_key = generate_keys()
