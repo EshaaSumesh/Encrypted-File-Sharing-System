@@ -1,5 +1,5 @@
-from crypto.aes_utils import generate_aes_key, encrypt_file, decrypt_file
-from crypto.rsa_utils import encrypt_key, decrypt_key
+from crypto.cryptoaes_utils import generate_aes_key, encrypt_file, decrypt_file
+from crypto.cryptorsa_utils import encrypt_key, decrypt_key
 import os
 
 
