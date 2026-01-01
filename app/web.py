@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, send_from_directory
-from app.file_handler import secure_store, secure_retrieve
+from file_handler import secure_store, secure_retrieve
 from crypto.rsa_utils import generate_keys
 import os
 
