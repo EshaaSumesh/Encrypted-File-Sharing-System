@@ -1,6 +1,6 @@
-from app.appauth import register, login
-from app.appfile_handler import secure_store, secure_retrieve
-from crypto.cryptorsa_utils import generate_keys
+from app.auth import register, login
+from app.file_handler import secure_store, secure_retrieve
+from crypto.rsa_utils import generate_keys
 
 private_key, public_key = generate_keys()
 
