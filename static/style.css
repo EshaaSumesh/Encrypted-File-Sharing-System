@@ -1,16 +1,64 @@
 body {
-  font-family: Arial;
-  background: #0f172a;
-  color: white;
+  background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+  font-family: "Segoe UI", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 20px;
+  width: 420px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
   text-align: center;
-  padding: 50px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  font-size: 15px;
 }
 
 button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background: #2563eb;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
   border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: #8b5cf6;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+button:hover {
+  background: #7c3aed;
+}
+

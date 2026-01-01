@@ -5,13 +5,25 @@
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <h1>Encrypted File Sharing</h1>
+  <div class="card">
+    <h1> Encrypted File Sharing</h1>
+    <p class="subtitle">Secure your files with hybrid encryption</p>
 
-  <form method="POST" enctype="multipart/form-data">
-    <input type="file" name="file" required>
-    <button type="submit">Upload & Encrypt</button>
-  </form>
+    <div class="section">
+      <h2>Upload & Encrypt</h2>
+      <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload File</button>
+      </form>
+    </div>
 
-  <p>To download: /download/filename</p>
+    <div class="section">
+      <h2>Decrypt & Download</h2>
+      <form action="/download" method="POST">
+        <input type="text" name="filename" placeholder="example.txt" required>
+        <button type="submit">Download File</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
